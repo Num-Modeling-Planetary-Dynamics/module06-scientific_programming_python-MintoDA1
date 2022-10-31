@@ -2,7 +2,6 @@ import numpy as np
 import glob
 import os
 import astropy.constants as const
-import datetime
 
 def xv2el_one(mu,x,y,z,vx,vy,vz):
     """

@@ -46,7 +46,7 @@ class Orbits():
             self.DU2M  = AU2M
             self.TU2S  = YR2S
         else:
-            raise ValueError(f"{system} is an unknown unit system. Setting to SI")
+            raise ValueError(f"{system} is an unknown unit system.")
 
         self.GMSun = GMSunSI * self.TU2S**2 / self.DU2M**3
         self.unit_system = system

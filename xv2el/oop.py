@@ -56,18 +56,6 @@ class Orbits():
         return
 
     def load_cartesian_data(self):
-        """
-
-        Parameters
-        ----------
-        name : str
-            Name of planet
-
-        Returns
-        -------
-            Sets the tvals, rvec, and vvec array instances and returns a helpful text message
-
-        """
 
         # Initialize the two empty lists we plan to return
         planet_names = []
@@ -89,7 +77,18 @@ class Orbits():
         self.xv_data = dict(zip(planet_names, xv_data))
         return
 
+    def xv2el(self):
+        return
+
+    def write_elem_to_disk(self):
+        return
+
+    def plot(self):
+        return
 
 if __name__ == '__main__':
     solar_system = Orbits()
     solar_system.load_cartesian_data()
+    solar_system.xv2el()
+    solar_system.write_elem_to_disk()
+    solar_system.plot()
